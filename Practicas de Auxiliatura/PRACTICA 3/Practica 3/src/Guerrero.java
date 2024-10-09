@@ -5,8 +5,11 @@ public class Guerrero extends Personaje {
         super(nombre, nivel, puntosDeVida);
         this.fuerza = fuerza;
     }
+    public int getFuerza() {
+        return fuerza;
+    }
 
     public void atacar(){
-        System.out.println("El guerrero ha realizado un ataque ");
+        System.out.println("El guerrero ha realizado un ataque " + "con una fuerza de " + fuerza);
     }
 }

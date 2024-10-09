@@ -1,15 +1,16 @@
-
-public class App {
+// Ejercicio 4 juego simple de combate
+public class Combate {
     public static void main(String[] args) throws Exception {
-        //Personaje persinaje1 = new Personaje("Alvaro", 37, 100);
+        
         Mago mago1 = new Mago("Merlin", 30, 100, 50);
         Guerrero guerrero1 = new Guerrero("Hercules", 50, 100, 120);
+
         System.out.println("................comienza el combate...............");
 
         do {
             System.out.println("...............Turno del mago..................");
 
-            mago1.LanzarHechhizo();
+            mago1.LanzarHechizo();
             mago1.recibirDaño(15);
 
             System.out.println("...............Turno del guerrero.................");

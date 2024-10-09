@@ -7,7 +7,7 @@ public class Arquero extends Personaje {
     }
 
     public void dispararFlecha(){
-        System.out.println("El arquero ha disparado una flecha" + destreza);
+        int daño = destreza * 2;
+        System.out.println("El arquero ha disparado una flecha con destreza de " + destreza + " causando " + daño + " puntos de daño.");
     }
-    
 }

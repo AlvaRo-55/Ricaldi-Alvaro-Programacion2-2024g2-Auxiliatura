@@ -5,7 +5,12 @@ public class Mago extends Personaje {
         super(nombre, nivel, puntosDeVida);
         this.mana = mana;
     }
-    public void LanzarHechhizo(){
-        System.out.println("El mago ha lanzado un hechizo" );
+    public void LanzarHechizo(){
+        if (mana >= 10) {
+            System.out.println("El mago ha lanzado un hechizo");
+            mana -= 10; 
+        } else {
+            System.out.println("No tienes suficiente maná para lanzar un hechizo.");
+        }
     }
 }
